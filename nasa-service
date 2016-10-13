@@ -1,0 +1,5 @@
+function NasaService(){
+var key = 'LW8jHnw3EjJ9JiBkdMxt2HRtbkTw4x1xXwe2AAt6';
+var baseUrl = 'https://api.nasa.gov/planetary/apod?api_key=LW8jHnw3EjJ9JiBkdMxt2HRtbkTw4x1xXwe2AAt6';
+
+var dataStore = this;
