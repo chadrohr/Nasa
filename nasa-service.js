@@ -1,3 +1,4 @@
+function NasaController (){
 var nasaService = new NasaService();
 
 
@@ -13,3 +14,5 @@ nasaService.photoOfTheDay()
 
         $('#myTemplate').append($(template));
     })
+}
+NasaController()

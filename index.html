@@ -15,24 +15,29 @@
 			<p>Enjoy the Picture of the day</p>
 		</div>
 	</div>
-	<script type="text/html">
-		<span>{{ url }}</span>
-		<span>{{ title }}</span>
-		<span>{{ copyright }}</span>
-		<span>{{ date }}</span>
-        <span>{{ explanation }}</span>
-	</script>
-	<!--<div id="pod">
-		<div class="image-responsive">
-
-			<img src="http://apod.nasa.gov/apod/image/1610/SGU-Another_World_At_Night_2-IMG_0875-LR_1024.jpg">
-		</div>-->
-
-
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-		<script src="nasa-service.js"></script>
+	<div class="text-center" id="myTemplate">
+		<!--Template appending-->
+	</div>
+	<script type="text/html" id="nasaTemplate">
+        <div class="spaceImage">
+            <img src="{{ url }}"></img>
+        </div>
+        <div class="title">
+            <span>{{ title }}</span>
+        </div>
+        <div class="copyright">
+            <span>{{ copyright }}</span>
+        </div>
+        <div class="date">
+            <span>{{ date }}</span>
+        </div>
+        <div class="explanation">
+            <span>{{ explanation }}</span>
+        </div>
+    </script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="controller.js"></script>
+	<script src="nasa-service.js"></script>
 </body>
 
 </html>
